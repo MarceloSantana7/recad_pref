@@ -1,0 +1,64 @@
+/* Contêiner da barra de status */
+.status-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* Cada etapa do status */
+.status-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Linha entre os passos */
+.status-line {
+    flex-grow: 1;
+    height: 4px;
+    background-color: #ddd;
+    margin: 0 10px;
+}
+
+/* Passos completados */
+.status-step.completed {
+    background-color: #4caf50;
+    color: #fff;
+    border-color: #4caf50;
+}
+
+/* Passo ativo */
+.status-step.active {
+    background-color: #ff9800;
+    color: #fff;
+    border-color: #ff9800;
+}
+
+/* Passos futuros */
+.status-step:not(.completed):not(.active) {
+    background-color: #f9f9f9;
+    color: #666;
+    border-color: #ddd;
+}
+
+input.border-red-500, select.border-red-500, textarea.border-red-500 {
+    border-color: red;
+}
+
+@media print {
+    /* Ocultar botões e outros elementos indesejados */
+    #backDashboard {
+        display: none;
+    }
+}
+
