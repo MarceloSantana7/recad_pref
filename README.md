@@ -8,6 +8,8 @@ O projeto segue uma arquitetura organizada, segura e preparada para evolução, 
 
 ## Visão Geral
 
+![Image](https://github.com/user-attachments/assets/c2e42410-ebdb-4f9b-a857-48835c2fea7d)
+
 Este sistema permite:
 
 - Autenticação e autorização de usuários
